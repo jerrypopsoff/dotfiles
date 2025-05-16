@@ -7,7 +7,7 @@ This repository contains configuration files and scripts to set up a consistent 
 1. Clone the repository as a bare repository, allowing tracking of dotfiles without cluttering the home directory
 
    ```bash
-   git clone --bare git@github.com:jerrypopsoff/dotfiles.git $HOME/.dotfiles
+   git clone --bare https://github.com/jerrypopsoff/dotfiles.git $HOME/.dotfiles
    ```
 
 2. Define `config` as an alias for managing dotfiles in the home directory
