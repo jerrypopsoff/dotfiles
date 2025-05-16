@@ -1,0 +1,16 @@
+[user]
+    name = Jerry Haagsma
+    email = haagsmag@gmail.com
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    last = log -1 HEAD
+    lg = log --oneline --graph --decorate --all
+    unstage = reset HEAD --
+    amend = commit --amend --no-edit
+
+[init]
+    defaultBranch = main
