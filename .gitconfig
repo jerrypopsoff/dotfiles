@@ -11,7 +11,7 @@
     lg = log --oneline --graph --decorate --all
     unstage = reset HEAD --
     amend = commit --amend --no-edit
-    merge-latest = !git fetch origin convergence && git merge origin/convergence
+    merge-remote = !f() { git fetch origin "$1" && git merge origin/"$1"; }; f
     recent = !git branch -r --sort=-committerdate --format='%(refname:short) %(committerdate:relative)' | head -n 10
     prune-local = !git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs -r git branch -d
 
